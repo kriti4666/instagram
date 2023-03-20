@@ -22,7 +22,10 @@ const userSchema = new Schema({
         type: String,
         default: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
     },
-    follower: [{type: Schema.Types.ObjectId, ref:"user"}]
+    follower: [{type: Schema.Types.ObjectId, ref:"user"}],
+    following: [{type: Schema.Types.ObjectId, ref:"user"}],
+    
+
 
 }, {timestamps: true})
 
